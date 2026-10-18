@@ -73,3 +73,24 @@ The final version passes all seven tests covering knowledge scoring, confidence 
 ## Scope
 
 The A1 pitch identified timed rounds, streaks and category packs as possible stretch features. They were intentionally not added to the final prototype so the core interaction, scoring, testing and explanation could remain clear and achievable.
+Using the quiz
+Once the application opens:
+1. Start the quiz.
+2. Select an answer.
+3. Choose Guess, Think or Know.
+4. Lock in your answer.
+5. Read the feedback and explanation.
+6. Continue through all 12 questions.
+7. View your Knowledge Score and Calibration Score.
+8. Review your answers, replay missed questions, or restart the full quiz.
+Project scope
+The final prototype focuses on the core quiz experience:
+- 12 questions
+- random question order
+- confidence ratings
+- immediate feedback
+- answer explanations
+- knowledge scoring
+- confidence calibration
+- replaying missed questions
+Additional ideas such as timed rounds, category packs and streaks were considered as possible extensions but were intentionally kept outside the final prototype so that the core functionality could be developed and tested properly.
