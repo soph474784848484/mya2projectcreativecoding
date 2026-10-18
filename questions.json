@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q01",
+    "category": "Australia",
+    "question": "What is the capital city of Australia?",
+    "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    "correct": "Canberra",
+    "explanation": "Canberra is Australia's national capital and the seat of the Australian Parliament.",
+    "source_name": "Australian Parliament House",
+    "source_url": "https://www.aph.gov.au/Visit_Parliament/About_the_Building"
+  },
+  {
+    "id": "q02",
+    "category": "Science",
+    "question": "Which planet is the largest in our Solar System?",
+    "options": ["Earth", "Saturn", "Jupiter", "Neptune"],
+    "correct": "Jupiter",
+    "explanation": "Jupiter is the largest planet in the Solar System by both diameter and mass.",
+    "source_name": "NASA Solar System Exploration",
+    "source_url": "https://science.nasa.gov/jupiter/facts/"
+  },
+  {
+    "id": "q03",
+    "category": "Maths",
+    "question": "What is the smallest prime number?",
+    "options": ["0", "1", "2", "3"],
+    "correct": "2",
+    "explanation": "A prime number has exactly two positive divisors: 1 and itself. Two is the first number that meets that definition.",
+    "source_name": "Wolfram MathWorld",
+    "source_url": "https://mathworld.wolfram.com/PrimeNumber.html"
+  },
+  {
+    "id": "q04",
+    "category": "Art",
+    "question": "Who painted the Mona Lisa?",
+    "options": ["Michelangelo", "Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso"],
+    "correct": "Leonardo da Vinci",
+    "explanation": "The Mona Lisa was painted by Leonardo da Vinci and is held by the Louvre in Paris.",
+    "source_name": "Musée du Louvre",
+    "source_url": "https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana"
+  },
+  {
+    "id": "q05",
+    "category": "Literature",
+    "question": "Which playwright wrote Hamlet?",
+    "options": ["William Shakespeare", "Oscar Wilde", "George Bernard Shaw", "Christopher Marlowe"],
+    "correct": "William Shakespeare",
+    "explanation": "Hamlet is a tragedy by William Shakespeare, generally dated to around 1600-1601.",
+    "source_name": "Folger Shakespeare Library",
+    "source_url": "https://www.folger.edu/explore/shakespeares-works/hamlet/"
+  },
+  {
+    "id": "q06",
+    "category": "Technology",
+    "question": "Who invented the World Wide Web?",
+    "options": ["Bill Gates", "Tim Berners-Lee", "Steve Jobs", "Vint Cerf"],
+    "correct": "Tim Berners-Lee",
+    "explanation": "Tim Berners-Lee invented the World Wide Web while working at CERN in 1989.",
+    "source_name": "CERN",
+    "source_url": "https://home.cern/science/computing/birth-web"
+  },
+  {
+    "id": "q07",
+    "category": "Science",
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Ag", "Au", "Gd", "Go"],
+    "correct": "Au",
+    "explanation": "Gold has the chemical symbol Au and atomic number 79.",
+    "source_name": "IUPAC Periodic Table",
+    "source_url": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+  },
+  {
+    "id": "q08",
+    "category": "Geography",
+    "question": "The Great Barrier Reef is located off the coast of which Australian state?",
+    "options": ["New South Wales", "Queensland", "Western Australia", "Tasmania"],
+    "correct": "Queensland",
+    "explanation": "The Great Barrier Reef lies off the north-east coast of Australia, along Queensland.",
+    "source_name": "UNESCO World Heritage Centre",
+    "source_url": "https://whc.unesco.org/en/list/154/"
+  },
+  {
+    "id": "q09",
+    "category": "Computing",
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["func", "define", "def", "function"],
+    "correct": "def",
+    "explanation": "Python function definitions begin with the def keyword, followed by the function name and parameters.",
+    "source_name": "Python documentation",
+    "source_url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+  },
+  {
+    "id": "q10",
+    "category": "Biology",
+    "question": "Which molecule carries most hereditary information in humans?",
+    "options": ["DNA", "Glucose", "Cholesterol", "ATP"],
+    "correct": "DNA",
+    "explanation": "DNA stores hereditary information in humans and most other organisms.",
+    "source_name": "National Human Genome Research Institute",
+    "source_url": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet"
+  },
+  {
+    "id": "q11",
+    "category": "Space",
+    "question": "Which planet is closest to the Sun?",
+    "options": ["Venus", "Earth", "Mercury", "Mars"],
+    "correct": "Mercury",
+    "explanation": "Mercury is the innermost planet, orbiting closest to the Sun.",
+    "source_name": "NASA Solar System Exploration",
+    "source_url": "https://science.nasa.gov/mercury/facts/"
+  },
+  {
+    "id": "q12",
+    "category": "Computing",
+    "question": "What data format is commonly used to store key-value pairs and arrays in a human-readable text file?",
+    "options": ["JPEG", "JSON", "MP3", "PNG"],
+    "correct": "JSON",
+    "explanation": "JSON is a text-based data-interchange format built from name-value pairs and ordered values such as arrays.",
+    "source_name": "ECMA-404 JSON standard",
+    "source_url": "https://ecma-international.org/publications-and-standards/standards/ecma-404/"
+  }
+]
