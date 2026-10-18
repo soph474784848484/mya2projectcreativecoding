@@ -1,96 +1,116 @@
 # SURE?
 
-SURE? is a confidence-based general knowledge quiz. The player answers each question and then commits to **Guess**, **Think** or **Know** before feedback is revealed. The aim is to make the player pause and consider not only whether an answer is correct, but how certain they were when answering.
+SURE? is a confidence-based trivia quiz designed to encourage users to think before immediately searching for an answer.
 
-The final prototype contains 12 questions in random order, immediate explanations, a knowledge score, a confidence-calibration score, confidence-pattern feedback, answer review, replay of missed questions and a full restart.
+For each question, the user:
+1. Selects an answer.
+2. Rates how confident they are using Guess, Think, or Know.
 
-![SURE? results screen](results-screen.png)
+The quiz then gives feedback and, at the end, provides both a Knowledge Score and a Calibration Score.
 
-## How to run SURE?
+The aim of SURE? is to make general knowledge more active by encouraging users to pause, retrieve information from memory, and reflect on how confident they are in what they know.
 
-### 1. Download the repository
-Download or clone this repository to your computer, then open Terminal in the project folder.
+## What the quiz does
 
-### 2. Install the required package
-Run:
+SURE? includes 12 trivia questions presented in a random order.
 
-```bash
+For each question, the user:
+- selects an answer
+- chooses a confidence level: Guess, Think, or Know
+- locks in their response
+- receives immediate feedback
+- sees a short explanation of the correct answer
+
+At the end of the quiz, the user can see:
+- their Knowledge Score
+- their Calibration Score
+- confidence patterns
+- all of their previous answers
+- an option to replay missed questions
+- an option to restart the full quiz## How to run SURE?
+
+SURE? runs locally on a computer using Python.
+
+### Step 1: Download the project
+
+On this GitHub page, click Code and then Download ZIP.
+
+Unzip the downloaded folder.
+
+### Step 2: Open the project folder
+
+On Mac, open Terminal.
+
+On Windows, open Command Prompt or PowerShell.
+
+Navigate to the downloaded SURE? project folder.
+
+### Step 3: Install the required package
+
+Mac:
+
 python3 -m pip install -r requirements.txt
-```
 
-### 3. Start the quiz
-Run:
+Windows:
 
-```bash
+py -m pip install -r requirements.txt
+
+### Step 4: Start the quiz
+
+Mac:
+
 python3 -m streamlit run app.py
-```
 
-Streamlit will provide a local browser address, normally:
+Windows:
 
-```text
+py -m streamlit run app.py
+
+The quiz should automatically open in the computer's web browser.
+
+If it does not open automatically, enter:
+
 http://localhost:8501
-```
 
-Open that address in a browser to use the quiz. Keep the Terminal window open while the app is running. Press `Control + C` in Terminal when finished.
-
+To stop the application, return to Terminal or Command Prompt and press Control + C.
 ## Project files
 
-- `app.py` - controls the interface, question flow, feedback, results screen and Streamlit session state.
-- `quiz_logic.py` - contains the scoring, confidence-pattern and replay logic separately from the interface so it can be tested.
-- `questions.json` - stores the 12 quiz questions, answers, explanations and source links.
-- `requirements.txt` - lists the package required to run the project.
-- `.streamlit/config.toml` - stores the Streamlit theme settings.
-- `tests/test_quiz_logic.py` - contains seven unit tests for the scoring and replay logic.
-- `results-screen.png` - evidence of the final prototype running locally.
+### app.py
+This is the main application file. It controls the quiz interface, question flow, answer selection, confidence selection, feedback, results screen and replay options.
 
-## How the confidence score works
+### quiz_logic.py
+This file contains the quiz scoring and logic functions. It calculates the Knowledge Score, Calibration Score and confidence patterns shown at the end of the quiz.
 
-The knowledge score is simply the percentage of correct answers.
+### questions.json
+This file contains the 12 trivia questions, answer options, correct answers and explanations.
 
-The calibration score is a transparent prototype rule scored from 0 to 2 points for each response:
+### requirements.txt
+This file contains the package required to run the quiz.
 
-| Result | Guess | Think | Know |
-| --- | ---: | ---: | ---: |
-| Correct | 0 | 1 | 2 |
-| Incorrect | 2 | 1 | 0 |
+### tests/test_quiz_logic.py
+This file contains tests used to check that the main scoring functions work correctly.
 
-This rewards high confidence when an answer is correct and low confidence when an answer is incorrect. The score is a learning-oriented prototype metric, not a validated psychological assessment.
+### results-screen.png
+This is a screenshot of the completed SURE? prototype running successfully.
 
-## Replay logic
+## Project scope
 
-Each response stores the question ID and whether the answer was correct. At the end of the quiz, `missed_question_ids()` filters the incorrect responses. Selecting **Replay missed questions** starts another shuffled round using only those question IDs.
-
-## Testing
-
-From the project folder, run:
-
-```bash
-python3 -m unittest discover -s tests -v
-```
-
-The final version passes all seven tests covering knowledge scoring, confidence calibration, confidence-pattern counting and replaying missed questions.
-
-## Scope
-
-The A1 pitch identified timed rounds, streaks and category packs as possible stretch features. They were intentionally not added to the final prototype so the core interaction, scoring, testing and explanation could remain clear and achievable.
-Using the quiz
-Once the application opens:
-1. Start the quiz.
-2. Select an answer.
-3. Choose Guess, Think or Know.
-4. Lock in your answer.
-5. Read the feedback and explanation.
-6. Continue through all 12 questions.
-7. View your Knowledge Score and Calibration Score.
-8. Review your answers, replay missed questions, or restart the full quiz.
-Project scope
-The final prototype focuses on the core quiz experience:
-- 12 questions
+The final prototype focuses on:
+- 12 trivia questions
 - random question order
-- confidence ratings
+- Guess, Think and Know confidence ratings
 - immediate feedback
 - answer explanations
-- knowledge scoring
-- confidence calibration
+- Knowledge Score
+- Calibration Score
+- confidence pattern summary
+- review of previous answers
 - replaying missed questions
-Additional ideas such as timed rounds, category packs and streaks were considered as possible extensions but were intentionally kept outside the final prototype so that the core functionality could be developed and tested properly.
+- restarting the full quiz
+
+Possible extra features such as timed rounds, category packs and streaks were considered but were kept outside the final prototype so the core functionality could be developed and tested properly.
+
+## Author
+
+Sophie Purseglove  
+Creative Coding A2  
+SURE? Confidence-Based Trivia Quiz
