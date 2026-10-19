@@ -1,4 +1,4 @@
-# SURE?
+# SURE? - Sophie Purseglove A2 Creative Coding
 
 SURE? is a confidence-based trivia quiz designed to encourage users to think before immediately searching for an answer.
 
