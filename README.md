@@ -247,9 +247,3 @@ The final prototype focuses on the core SURE? experience:
 - restarting the full quiz
 
 Additional ideas including timed rounds, category packs and streaks were considered during development but were intentionally kept outside the final prototype so the core functionality could be completed and tested properly.
-
-## Author
-
-Sophie Purseglove  
-Creative Coding A2  
-SURE? Confidence-Based Trivia Quiz
